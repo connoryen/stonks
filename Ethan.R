@@ -14,3 +14,9 @@ library(TSA)
 library(lubridate)
 library(roxygen2)
 library(data.table)
+
+df0 <- fread('https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.csv')
+
+df <- df0 %>%
+  filter(!is.na(ticker))
+
