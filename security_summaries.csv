@@ -1,0 +1,1001 @@
+"ticker","sector","industry","fte","country","state","zip"
+"AAMC","Financial Services","Asset Management",24,"United States","VI","00820"
+"AAU","Basic Materials","Gold",8,"Canada","BC","V6H 3R9"
+"ACU","Consumer Defensive","Household & Personal Products",654,"United States","CT","06484"
+"ADRA","Financial Services","Shell Companies",NA,"United States","NC","28217"
+"ADRA-UN","","",NA,"United States","NC","28217"
+"ADRA-WT","","",NA,"","",NA
+"ADRT","Financial Services","Shell Companies",NA,"United States","NV","89141"
+"ADRT-UN","","",NA,"United States","NV","89141"
+"ADRT-WT","","",1,"United States","NV","89141"
+"AE","Energy","Oil & Gas Refining & Marketing",710,"United States","TX","77027"
+"AEF","Financial Services","Asset Management",NA,"United Kingdom",NA,"EC4M 9HH"
+"AGE","Healthcare","Biotechnology",5,"United States","CA","94501"
+"AIM","Healthcare","Biotechnology",21,"United States","FL","34473"
+"AINC","Financial Services","Asset Management",5526,"United States","TX","75254"
+"AIRI","Industrials","Aerospace & Defense",197,"United States","NY","11706"
+"AMBO","Consumer Defensive","Education & Training Services",1088,"China",NA,"100043"
+"AMPE","Healthcare","Biotechnology",20,"United States","CO","80112"
+"AMS","Healthcare","Medical Care Facilities",19,"United States","CA","94111-2619"
+"AP-WT","","",NA,"","",NA
+"APT","Industrials","Building Products & Equipment",121,"Canada","ON","L3R 9R2"
+"AREN","Communication Services","Internet Content & Information",333,"United States","NY","10281"
+"ARMP","Healthcare","Biotechnology",69,"United States","CA","90292"
+"ASM","Basic Materials","Other Precious Metals & Mining",NA,"Canada","BC","V6C 3P1"
+"ASXC","Healthcare","Medical Devices",153,"United States","NC","27703"
+"ATEST","","",NA,"","",NA
+"ATEST-A","","",NA,"","",NA
+"ATEST-B","","",NA,"","",NA
+"ATEST-C","","",NA,"","",NA
+"ATNM","Healthcare","Biotechnology",32,"United States","NY","10016"
+"AUMN","Basic Materials","Other Precious Metals & Mining",248,"United States","CO","80401"
+"AUST","Basic Materials","Gold",NA,"Canada","BC","V6C 0C3"
+"AWX","Industrials","Waste Management",611,"United States","OH","44484-5555"
+"AXU","Basic Materials","Other Precious Metals & Mining",187,"Canada","BC","V7X 1M9"
+"BATL","Energy","Oil & Gas E&P",58,"United States","TX","77043"
+"BCV","Financial Services","Asset Management",NA,"United States","NY","10580-1422"
+"BCV-PA","","",NA,"United States","NY","10580-1422"
+"BDL","Consumer Cyclical","Restaurants",665,"United States","FL","33334"
+"BGI","Consumer Cyclical","Luxury Goods",296,"Canada","QC","H3A 2A5"
+"BHB","Financial Services","Banks—Regional",495,"United States","ME","04609-0400"
+"BKTI","Technology","Communication Equipment",113,"United States","FL","32904"
+"BMTX","Technology","Software—Application",275,"United States","PA","19087"
+"BMTX-WT","","",NA,"","",NA
+"BRBS","Financial Services","Banks—Regional",513,"United States","VA","22901"
+"BRG","Real Estate","REIT—Residential",NA,"United States","NY","10105"
+"BRG-PC","","",NA,"United States","NY","10105"
+"BRG-PD","","",NA,"United States","NY","10105"
+"BRMK-WT","","",NA,"","",NA
+"BRN","Energy","Oil & Gas E&P",35,"United States","HI","96813-2840"
+"BTG","Basic Materials","Gold",NA,"Canada","BC","V6C 2X8"
+"BTN","Consumer Cyclical","Leisure",158,"United States","NC","28209"
+"BTTR","Consumer Defensive","Packaged Foods",43,"United States","FL","33626"
+"CANF","Healthcare","Biotechnology",8,"Israel",NA,"4951778"
+"CCF","Basic Materials","Specialty Chemicals",661,"United States","MA","02090-2315"
+"CEI","Energy","Oil & Gas E&P",9,"United States","TX","77094"
+"CET","Financial Services","Asset Management",NA,"United States","NY","10111"
+"CEV","Financial Services","Asset Management",NA,"United States","MA","02110"
+"CIK","Financial Services","Asset Management",NA,"United States","NY","10010-3629"
+"CIX","Industrials","Security & Protection Services",570,"United States","TX","75240-2620"
+"CKX","Energy","Oil & Gas E&P",NA,"United States","LA","70601"
+"CLM","Financial Services","Asset Management",NA,"United States","NC","28803"
+"CMCL","Basic Materials","Gold",NA,"Jersey",NA,"JE2 3NF"
+"CMT","Basic Materials","Specialty Chemicals",1584,"United States","OH","43228-0183"
+"COHN","Financial Services","Capital Markets",115,"United States","PA","19104"
+"CPHI","Healthcare","Drug Manufacturers—Specialty & Generic",236,"China",NA,"570216"
+"CQP","Energy","Oil & Gas Midstream",NA,"United States","TX","77002"
+"CRF","Financial Services","Asset Management",NA,"United States","NC","28803"
+"CTEK","Technology","Information Technology Services",89,"United States","TX","78759"
+"CTGO","Basic Materials","Gold",6,"United States","TX","77098"
+"CVM","Healthcare","Biotechnology",NA,"United States","VA","22182"
+"CVR","Industrials","Tools & Accessories",201,"United States","IL","60563"
+"CYBN","Healthcare","Biotechnology",50,"Canada","ON","M5X 1C9"
+"DC","Basic Materials","Gold",24,"United States","SD","57754"
+"DHY","Financial Services","Asset Management",NA,"United States","NY","10010-3629"
+"DIT","Consumer Defensive","Food Distribution",749,"United States","NE","68122"
+"DLA","Consumer Cyclical","Apparel Manufacturing",8900,"United States","GA","30097"
+"DMF","Financial Services","Asset Management",NA,"United States","NY","10286"
+"DNN","Energy","Uranium",NA,"Canada","ON","M5J 1T1"
+"DPSI","Technology","Software—Application",100,"United States","CA","92653"
+"DSS","Consumer Cyclical","Packaging & Containers",113,"United States","NY","14586"
+"DXF","Financial Services","Credit Services",11,"China",NA,"430063"
+"EAD","Financial Services","Asset Management",NA,"United States","CA","94105"
+"ECF","Financial Services","Asset Management",NA,"United States","NY","10580-1422"
+"ECF-PA","","",NA,"United States","NY","10580-1422"
+"EIM","Financial Services","Asset Management",NA,"United States","MA","02110"
+"ELA","Consumer Cyclical","Luxury Goods",256,"United States","TX","75038-5202"
+"ELLO","Utilities","Utilities—Renewable",20,"Israel",NA,"6688121"
+"ELMD","Healthcare","Medical Devices",132,"United States","MN","56071"
+"EMAN","Technology","Electronic Components",101,"United States","NY","12533"
+"EMX","Basic Materials","Other Industrial Metals & Mining",40,"Canada","BC","V6C 1X8"
+"ENSV","Energy","Oil & Gas Equipment & Services",88,"United States","CO","80504"
+"ENX","Financial Services","Asset Management",NA,"United States","MA","02110"
+"EP","Energy","Oil & Gas E&P",31,"United States","OK","74114"
+"EPM","Energy","Oil & Gas E&P",5,"United States","TX","77079"
+"EQX","Basic Materials","Gold",NA,"Canada","BC","V6C 1G8"
+"ERC","Financial Services","Asset Management",NA,"United States","CA","94105"
+"ERH","Financial Services","Asset Management",NA,"United States","CA","94105"
+"ESP","Industrials","Electrical Equipment & Parts",150,"United States","NY","12866-4755"
+"EVBN","Financial Services","Banks—Regional",378,"United States","NY","14221"
+"EVI","Industrials","Industrial Distribution",526,"United States","FL","33137"
+"EVM","Financial Services","Asset Management",NA,"United States","MA","02110"
+"EVV","Financial Services","Asset Management",NA,"United States","MA","02110"
+"EXN","Basic Materials","Other Industrial Metals & Mining",257,"Canada","ON","M5C 1C3"
+"FAX","Financial Services","Asset Management",NA,"Singapore",NA,"049480"
+"FCO","Financial Services","Asset Management",NA,"United Kingdom",NA,"EC4M 9HH"
+"FEN","Financial Services","Asset Management",NA,"United States","IL","60187"
+"FRD","Basic Materials","Steel",101,"United States","TX","75601"
+"FSI","Basic Materials","Specialty Chemicals",39,"Canada","AB","T1G 1X4"
+"FSP","Real Estate","REIT—Office",34,"United States","MA","01880"
+"FTF","Financial Services","Asset Management",NA,"United States","CA","94403-1906"
+"FURY","Basic Materials","Other Industrial Metals & Mining",10,"Canada","BC","V6E 2K3"
+"GAU","Basic Materials","Gold",NA,"Canada","BC","V6E 3X1"
+"GBR","Real Estate","Real Estate Services",3,"United States","TX","75234"
+"GGN","Financial Services","Asset Management",NA,"United States","NY","10580-1422"
+"GGN-PB","","",NA,"United States","NY","10580-1422"
+"GLDG","Basic Materials","Gold",22,"Canada","BC","V6E 2Y3"
+"GLO","Financial Services","Asset Management",NA,"United States","MA","02109"
+"GLQ","Financial Services","Asset Management",NA,"United States","MA","02109"
+"GLTA","Financial Services","Shell Companies",NA,"United States","DC","20009"
+"GLTA-UN","","",NA,"United States","DC","20009"
+"GLTA-WT","","",NA,"","",NA
+"GLU","Financial Services","Asset Management",NA,"United States","NY","10580-1422"
+"GLU-PA","","",NA,"","",NA
+"GLU-PB","","",NA,"United States","NY","10580-1422"
+"GLV","Financial Services","Asset Management",NA,"United States","MA","02109"
+"GNS","Consumer Defensive","Education & Training Services",241,"Singapore",NA,"049950"
+"GOED","Consumer Cyclical","Specialty Retail",482,"United States","NY","11214"
+"GOED-WT","","",NA,"","",NA
+"GORO","Basic Materials","Gold",540,"United States","CO","80237"
+"GPL","Basic Materials","Gold",NA,"Canada","BC","V6C 1S4"
+"GRF","Financial Services","Asset Management",NA,"United States","WI","53202-3657"
+"GROY","Basic Materials","Other Precious Metals & Mining",4,"Canada","BC","V6E 2Y3"
+"GROY-WT","","",NA,"","",NA
+"GSAT","Communication Services","Telecom Services",329,"United States","LA","70433"
+"GSV","Basic Materials","Gold",20,"Canada","BC","V6C 1B4"
+"GTE","Energy","Oil & Gas E&P",319,"Canada","AB","T2P 0R3"
+"HNRA","Financial Services","Shell Companies",NA,"United States","TX","77098"
+"HNRA-WT","","",NA,"United States","TX","77098"
+"HNW","Financial Services","Asset Management",NA,"United States","MA","02109-1800"
+"HUSA","Energy","Oil & Gas E&P",2,"United States","TX","77002"
+"HWM-P","","",19900,"United States","PA","15212-5872"
+"IAF","Financial Services","Asset Management",NA,"Australia","NSW","2000"
+"IAUX","Basic Materials","Gold",NA,"United States","NV","89502"
+"IBIO","Healthcare","Biotechnology",49,"United States","TX","77807"
+"IBO","","",NA,"","",NA
+"ID","Consumer Cyclical","Internet Retail",108,"United States","NJ","08512"
+"IDR","Basic Materials","Gold",38,"United States","ID","83814"
+"IDW","Communication Services","Publishing",78,"United States","NJ","07102"
+"IE","Technology","Software—Application",89,"Canada","BC","V6C 3E1"
+"IGC","Industrials","Conglomerates",52,"United States","MD","20854"
+"IHT","Real Estate","REIT—Hotel & Motel",49,"United States","AZ","85020"
+"IMH","Financial Services","Mortgage Finance",326,"United States","CA","92612"
+"IMO","Energy","Oil & Gas Integrated",5400,"Canada","AB","T2C 5N1"
+"INDO","Energy","Oil & Gas E&P",28,"Indonesia",NA,"12950"
+"INFU","Healthcare","Medical Instruments & Supplies",394,"United States","MI","48309"
+"INTT","Technology","Semiconductor Equipment & Materials",303,"United States","NJ","08054"
+"INUV","Communication Services","Advertising Agencies",83,"United States","AR","72201"
+"IOR","Financial Services","Mortgage Finance",NA,"United States","TX","75234"
+"IPB","","",NA,"","",NA
+"ISDR","Technology","Information Technology Services",86,"United States","NC","27603"
+"ISR","Healthcare","Medical Devices",61,"United States","WA","99354"
+"ITP","Basic Materials","Paper & Paper Products",366,"China",NA,"072550"
+"ITRG","Basic Materials","Other Precious Metals & Mining",48,"Canada","BC","V6C 3A6"
+"JOB","Industrials","Staffing & Employment Services",271,"United States","FL","32256"
+"KIQ","Industrials","Railroads",NA,"Canada","BC","V4A 8J1"
+"KLR-WT","","",NA,"","",NA
+"KULR","Technology","Electronic Components",52,"United States","CA","92111"
+"LCTX","Healthcare","Biotechnology",57,"United States","CA","92008"
+"LEU","Energy","Uranium",266,"United States","MD","20817"
+"LGL","Technology","Electronic Components",161,"United States","FL","32804"
+"LGL-WT","","",NA,"","",NA
+"LNFA","Financial Services","Shell Companies",NA,"United States","IL","60606"
+"LNFA-UN","","",NA,"United States","IL","60606"
+"LNFA-WT","","",NA,"United States","IL","60606"
+"LNG","Energy","Oil & Gas Midstream",1550,"United States","TX","77002"
+"LODE","Real Estate","Real Estate Services",32,"United States","NV","89440"
+"LSF","Consumer Defensive","Packaged Foods",145,"United States","OR","97759"
+"MAG","Basic Materials","Silver",10,"Canada","BC","V6C 2V6"
+"MGLD","Financial Services","Asset Management",95,"United States","CA","92672"
+"MHH","Industrials","Staffing & Employment Services",1663,"United States","PA","15108"
+"MIMO","Communication Services","Telecom Services",749,"United States","FL","33431"
+"MIMO-WT","","",749,"United States","FL","33431"
+"MIMO-WTA","","",NA,"","",NA
+"MIMO-WTB","","",NA,"","",NA
+"MIMO-WTC","","",NA,"","",NA
+"MITQ","Technology","Communication Equipment",18,"United States","CA","92075"
+"MLSS","Healthcare","Medical Instruments & Supplies",26,"United States","NJ","07068"
+"MMX","Basic Materials","Other Precious Metals & Mining",9,"Canada","BC","V6C 3A8"
+"MSN","Technology","Consumer Electronics",22,"United States","NJ","07054"
+"MTA","Basic Materials","Other Precious Metals & Mining",4,"Canada","BC","V6C 1X8"
+"MTMT","Industrials","Rental & Leasing Services",NA,"United States","CA","94306"
+"MTNB","Healthcare","Biotechnology",31,"United States","NJ","07921"
+"MXC","Energy","Oil & Gas E&P",2,"United States","TX","79701"
+"MYO","Healthcare","Medical Devices",87,"United States","MA","02114"
+"NAK","Basic Materials","Other Industrial Metals & Mining",NA,"Canada","BC","V6E 4H1"
+"NAVB","Healthcare","Biotechnology",11,"United States","OH","43017-3552"
+"NBH","Financial Services","Asset Management",NA,"United States","NY","10104"
+"NBO","Financial Services","Asset Management",NA,"United States","NY","10104"
+"NBW","Financial Services","Asset Management",NA,"United States","NY","10104"
+"NBY","Healthcare","Biotechnology",29,"United States","CA","94608"
+"NEN","Real Estate","Real Estate Services",NA,"United States","MA","02134"
+"NEWP","Basic Materials","Other Precious Metals & Mining",NA,"Canada","BC","V6E 3X1"
+"NFGC","Basic Materials","Gold",NA,"Canada","BC","V6C 2V6"
+"NG","Basic Materials","Gold",NA,"Canada","BC","V6C 3A6"
+"NGD","Basic Materials","Gold",NA,"Canada","ON","M5J 2T3"
+"NHC","Healthcare","Medical Care Facilities",12965,"United States","TN","37130"
+"NHS","Financial Services","Asset Management",NA,"United States","NY","10104"
+"NHWK","Healthcare","Biotechnology",49,"United States","NC","27560"
+"NILE","Industrials","Aerospace & Defense",313,"United States","NV","89141"
+"NILE-PD","","",313,"United States","NV","89141"
+"NML","Financial Services","Asset Management",NA,"United States","NY","10104"
+"NNVC","Healthcare","Biotechnology",17,"United States","CT","06484"
+"NRO","Financial Services","Asset Management",NA,"United States","NY","10104"
+"NTIP","Industrials","Specialty Business Services",3,"United States","CT","06840"
+"OBE","Energy","Oil & Gas E&P",173,"Canada","AB","T2P 1K3"
+"OGEN","Healthcare","Biotechnology",5,"United States","FL","33634"
+"OPTT","Industrials","Electrical Equipment & Parts",46,"United States","NJ","08831"
+"ORLA","Basic Materials","Gold",206,"Canada","BC","V6C 2T5"
+"OZ","Real Estate","Real Estate—Development",NA,"United States","CT","06831"
+"PCG-PA","","",25989,"United States","CA","94177"
+"PCG-PB","","",25989,"United States","CA","94177"
+"PCG-PC","","",NA,"","",NA
+"PCG-PD","","",25989,"United States","CA","94177"
+"PCG-PE","","",25989,"United States","CA","94177"
+"PCG-PG","","",25989,"United States","CA","94177"
+"PCG-PH","","",25989,"United States","CA","94177"
+"PCG-PI","","",NA,"","",NA
+"PED","Energy","Oil & Gas E&P",14,"United States","TX","77079"
+"PHGE","Healthcare","Biotechnology",103,"Israel",NA,"7414003"
+"PHGE-UN","","",103,"Israel",NA,"7414003"
+"PHGE-WT","","",NA,"","",NA
+"PLAG","Consumer Defensive","Packaged Foods",185,"United States","NY","11345"
+"PLG","Basic Materials","Other Precious Metals & Mining",13,"Canada","BC","V6E 4A6"
+"PLM","Basic Materials","Other Industrial Metals & Mining",NA,"United States","MN","55101"
+"PLX","Healthcare","Biotechnology",202,"United States","NJ","07601"
+"PLYM-PA","","",39,"United States","MA","02110"
+"PRK","Financial Services","Banks—Regional",1573,"United States","OH","43058-3500"
+"PTN","Healthcare","Biotechnology",26,"United States","NJ","08512"
+"PW","Real Estate","REIT—Specialty",2,"United States","NY","11804"
+"PW-PA","","",NA,"","",NA
+"PZG","Basic Materials","Gold",7,"United States","NV","89445"
+"RCG","Financial Services","Asset Management",NA,"United States","NY","10016"
+"RCOR","Healthcare","Biotechnology",19,"United States","CT","06836"
+"RCOR-WT","","",NA,"","",NA
+"REI","Energy","Oil & Gas E&P",53,"United States","TX","77380"
+"REPX","Energy","Oil & Gas E&P",54,"United States","OK","73104"
+"RHE","Healthcare","Medical Care Facilities",67,"United States","GA","30024-7191"
+"RHE-PA","","",67,"United States","GA","30024-7191"
+"RLGT","Industrials","Integrated Freight & Logistics",656,"United States","WA","98057"
+"RMED","Healthcare","Medical Devices",58,"United States","CA","92011"
+"RVP","Healthcare","Medical Instruments & Supplies",269,"United States","TX","75068-5295"
+"SACC","","",NA,"","",NA
+"SACH","Real Estate","REIT—Mortgage",19,"United States","CT","06405"
+"SACH-PA","","",19,"United States","CT","06405"
+"SBEV","Consumer Defensive","Beverages—Brewers",21,"United States","FL","33301"
+"SBEV-WT","","",NA,"","",NA
+"SCCB","","",NA,"","",NA
+"SCCC","","",NA,"","",NA
+"SCCD","","",NA,"","",NA
+"SCCE","","",NA,"","",NA
+"SCCF","","",NA,"","",NA
+"SDPI","Energy","Oil & Gas Equipment & Services",58,"United States","UT","84078"
+"SEB","Industrials","Conglomerates",13200,"United States","KS","66202"
+"SENS","Healthcare","Medical Devices",89,"United States","MD","20876-7005"
+"SIF","Industrials","Aerospace & Defense",378,"United States","OH","44103"
+"SILV","Basic Materials","Other Precious Metals & Mining",838,"Canada","BC","V6C 3P1"
+"SIM","Basic Materials","Steel",5369,"Mexico","JA","44440"
+"SKYH","Industrials","Aerospace & Defense",NA,"United States","NY","10604"
+"SKYH-WT","","",17,"United States","NY","10604"
+"SLI","Basic Materials","Other Industrial Metals & Mining",NA,"Canada","BC","V6B 5C6"
+"SMTS","Basic Materials","Other Industrial Metals & Mining",1440,"Canada","ON","M5J 2S1"
+"SNMP","Energy","Oil & Gas Midstream",NA,"United States","TX","77056"
+"SSY","Healthcare","Pharmaceutical Retailers",NA,"United States","GA","30339"
+"STR-WT","","",NA,"United States","CO","80202"
+"STXS","Healthcare","Medical Instruments & Supplies",130,"United States","MO","63101"
+"SVM","Basic Materials","Silver",NA,"Canada","BC","V6E 3X1"
+"SVT","Industrials","Electrical Equipment & Parts",268,"United States","NY","14059"
+"SYN","Healthcare","Biotechnology",16,"United States","MD","20850"
+"TDW-WT","","",NA,"","",NA
+"TELL","Energy","Oil & Gas E&P",107,"United States","TX","77002"
+"TELZ","","",NA,"","",NA
+"TGB","Basic Materials","Copper",NA,"Canada","BC","V6E 4H1"
+"THM","Basic Materials","Gold",3,"Canada","BC","V6C 1S4"
+"TKAT","Consumer Cyclical","Internet Retail",7,"Hong Kong",NA,NA
+"TMBR","Healthcare","Biotechnology",5,"United States","NJ","07920"
+"TMP","Financial Services","Banks—Regional",969,"United States","NY","14851"
+"TMQ","Basic Materials","Other Industrial Metals & Mining",7,"Canada","BC","V7Y 1G5"
+"TPHS","Real Estate","Real Estate—Diversified",9,"United States","NY","10173"
+"TRT","Technology","Semiconductor Equipment & Materials",501,"United States","CA","91406"
+"TRX","Basic Materials","Gold",NA,"Canada","ON","M5H 1J9"
+"UAMY","Basic Materials","Other Industrial Metals & Mining",69,"United States","MT","59873"
+"UAVS","Technology","Computer Hardware",121,"United States","KS","67226"
+"UEC","Energy","Uranium",47,"United States","TX","78401"
+"UFAB","Consumer Cyclical","Auto Parts",915,"United States","MI","48326"
+"URG","Energy","Uranium",21,"United States","CO","80127"
+"USAS","Basic Materials","Other Industrial Metals & Mining",NA,"Canada","ON","M5H 1J8"
+"UTG","Financial Services","Asset Management",NA,"United States","NJ","07302"
+"UUU","Industrials","Security & Protection Services",13,"United States","MD","21117-6218"
+"UUUU","Energy","Uranium",103,"United States","CO","80228"
+"VFL","Financial Services","Asset Management",NA,"United States","PA","19103-7094"
+"VGZ","Basic Materials","Gold",17,"United States","CO","80127"
+"VHAQ","Financial Services","Shell Companies",NA,"United States","GA","30092"
+"VHAQ-R","","",NA,"","",NA
+"VHAQ-UN","","",NA,"United States","GA","30092"
+"VHAQ-WT","","",NA,"","",NA
+"VINE","Consumer Defensive","Beverages—Wineries & Distilleries",NA,"United States","MN","55441"
+"VKI","Financial Services","Asset Management",NA,"United States","GA","30309"
+"VNRX","Healthcare","Diagnostics & Research",83,"United States","TX","78738"
+"VZLA","Basic Materials","Other Industrial Metals & Mining",NA,"Canada","BC","V6E 3V7"
+"WBEV","Consumer Defensive","Beverages—Wineries & Distilleries",100,"United States","CA","90404"
+"WLMS","Industrials","Engineering & Construction",1515,"United States","GA","30338"
+"WRN","Basic Materials","Other Industrial Metals & Mining",8,"Canada","BC","V6E 3Z3"
+"WTT","Technology","Communication Equipment",155,"United States","NJ","07054"
+"WWR","Basic Materials","Other Industrial Metals & Mining",15,"United States","CO","80112"
+"WYY","Technology","Information Technology Services",253,"United States","VA","22030"
+"XPL","Basic Materials","Other Industrial Metals & Mining",5,"United States","CO","80033"
+"XTNT","Healthcare","Medical Devices",116,"United States","MT","59714"
+"YCBD","Healthcare","Drug Manufacturers—Specialty & Generic",121,"United States","NC","28217"
+"YCBD-PA","","",121,"United States","NC","28217"
+"ZDGE","Communication Services","Internet Content & Information",93,"United States","NY","10001"
+"ZOM","Healthcare","Drug Manufacturers—Specialty & Generic",47,"United States","MI","48108"
+"AAA","","",NA,NA,NA,NA
+"ABEQ","","",NA,NA,NA,NA
+"ACES","","",NA,NA,NA,NA
+"ACTV","","",NA,NA,NA,NA
+"ACVF","","",NA,NA,NA,NA
+"ACWF","","",NA,NA,NA,NA
+"ADIV","","",NA,NA,NA,NA
+"AEMB","","",NA,NA,NA,NA
+"AFK","","",NA,NA,NA,NA
+"AFLG","","",NA,NA,NA,NA
+"AFMC","","",NA,NA,NA,NA
+"AFSM","","",NA,NA,NA,NA
+"AFTY","","",NA,NA,NA,NA
+"AGG","","",NA,NA,NA,NA
+"AGGH","","",NA,NA,NA,NA
+"AGGY","","",NA,NA,NA,NA
+"AGIH","","",NA,"","",NA
+"AGOV","","",NA,NA,NA,NA
+"AGOX","","",NA,NA,NA,NA
+"AGQ","","",NA,NA,NA,NA
+"AGRH","","",NA,"","",NA
+"AGZ","","",NA,NA,NA,NA
+"AHHX","","",NA,NA,NA,NA
+"AHOY","","",NA,NA,NA,NA
+"AHYB","","",NA,NA,NA,NA
+"AIEQ","","",NA,NA,NA,NA
+"AIIQ","","",NA,NA,NA,NA
+"AILG","","",NA,NA,NA,NA
+"AILV","","",NA,NA,NA,NA
+"AIVI","","",NA,NA,NA,NA
+"AIVL","","",NA,NA,NA,NA
+"ALTL","","",NA,NA,NA,NA
+"AMAX","","",NA,NA,NA,NA
+"AMJ","","",NA,NA,NA,NA
+"AMLP","","",NA,NA,NA,NA
+"AMNA","","",NA,NA,NA,NA
+"AMND","","",NA,NA,NA,NA
+"AMOM","","",NA,NA,NA,NA
+"AMTR","","",NA,NA,NA,NA
+"AMUB","","",NA,NA,NA,NA
+"AMZA","","",NA,NA,NA,NA
+"ANEW","","",NA,NA,NA,NA
+"AOA","","",NA,NA,NA,NA
+"AOK","","",NA,NA,NA,NA
+"AOM","","",NA,NA,NA,NA
+"AOR","","",NA,NA,NA,NA
+"AQGX","","",NA,NA,NA,NA
+"ARB","","",NA,NA,NA,NA
+"ARGT","","",NA,NA,NA,NA
+"ARKF","","",NA,NA,NA,NA
+"ARKK","","",NA,NA,NA,NA
+"ARKW","","",NA,NA,NA,NA
+"ARMR","","",NA,NA,NA,NA
+"ASEA","","",NA,NA,NA,NA
+"ASHR","","",NA,NA,NA,NA
+"ASHS","","",NA,NA,NA,NA
+"ASHX","","",NA,NA,NA,NA
+"ASPY","","",NA,NA,NA,NA
+"ATFV","","",NA,NA,NA,NA
+"AUSF","","",NA,NA,NA,NA
+"AVDE","","",NA,NA,NA,NA
+"AVDV","","",NA,NA,NA,NA
+"AVEM","","",NA,NA,NA,NA
+"AVES","","",NA,NA,NA,NA
+"AVIG","","",NA,NA,NA,NA
+"AVIV","","",NA,NA,NA,NA
+"AVLV","","",NA,NA,NA,NA
+"AVMU","","",NA,NA,NA,NA
+"AVRE","","",NA,NA,NA,NA
+"AVSC","","",NA,NA,NA,NA
+"AVSD","","",NA,NA,NA,NA
+"AVSE","","",NA,NA,NA,NA
+"AVSF","","",NA,NA,NA,NA
+"AVSU","","",NA,NA,NA,NA
+"AVUS","","",NA,NA,NA,NA
+"AVUV","","",NA,NA,NA,NA
+"AWAY","","",NA,NA,NA,NA
+"AWTM","","",NA,NA,NA,NA
+"AWYX","","",NA,NA,NA,NA
+"AZAA","","",NA,NA,NA,NA
+"AZAJ","","",NA,NA,NA,NA
+"AZAL","","",NA,NA,NA,NA
+"AZAO","","",NA,NA,NA,NA
+"AZBA","","",NA,NA,NA,NA
+"AZBJ","","",NA,NA,NA,NA
+"AZBL","","",NA,NA,NA,NA
+"AZBO","","",NA,NA,NA,NA
+"BAB","","",NA,NA,NA,NA
+"BAD","","",NA,NA,NA,NA
+"BAL","","",NA,NA,NA,NA
+"BAR","","",NA,NA,NA,NA
+"BATT","","",NA,NA,NA,NA
+"BBC","","",NA,NA,NA,NA
+"BBMC","","",NA,NA,NA,NA
+"BBP","","",NA,NA,NA,NA
+"BBSC","","",NA,NA,NA,NA
+"BCD","","",NA,NA,NA,NA
+"BCI","","",NA,NA,NA,NA
+"BCIM","","",NA,"","",NA
+"BCM","","",NA,NA,NA,NA
+"BDCX","","",NA,NA,NA,NA
+"BDCZ","","",NA,NA,NA,NA
+"BDRY","","",NA,NA,NA,NA
+"BECO","","",NA,NA,NA,NA
+"BEDZ","","",NA,NA,NA,NA
+"BERZ","","",NA,NA,NA,NA
+"BETZ","","",NA,NA,NA,NA
+"BFIX","","",NA,NA,NA,NA
+"BFOR","","",NA,NA,NA,NA
+"BFTR","","",NA,NA,NA,NA
+"BIBL","","",NA,NA,NA,NA
+"BIDS","","",NA,NA,NA,NA
+"BIL","","",NA,NA,NA,NA
+"BILS","","",NA,NA,NA,NA
+"BITI","","",NA,"","",NA
+"BITO","","",NA,NA,NA,NA
+"BITQ","","",NA,NA,NA,NA
+"BIV","","",NA,NA,NA,NA
+"BIZD","","",NA,NA,NA,NA
+"BKAG","","",NA,NA,NA,NA
+"BKCI","","",NA,NA,NA,NA
+"BKEM","","",NA,NA,NA,NA
+"BKES","","",NA,NA,NA,NA
+"BKF","","",NA,NA,NA,NA
+"BKHY","","",NA,NA,NA,NA
+"BKIE","","",NA,NA,NA,NA
+"BKIS","","",NA,NA,NA,NA
+"BKLC","","",NA,NA,NA,NA
+"BKLN","","",NA,NA,NA,NA
+"BKMC","","",NA,NA,NA,NA
+"BKSB","","",NA,NA,NA,NA
+"BKSE","","",NA,NA,NA,NA
+"BKUI","","",NA,NA,NA,NA
+"BKUS","","",NA,NA,NA,NA
+"BLES","","",NA,NA,NA,NA
+"BLHY","","",NA,NA,NA,NA
+"BLOK","","",NA,NA,NA,NA
+"BLV","","",NA,NA,NA,NA
+"BMED","","",NA,NA,NA,NA
+"BNDC","","",NA,NA,NA,NA
+"BNDD","","",NA,NA,NA,NA
+"BNE","","",NA,NA,NA,NA
+"BNGE","","",NA,NA,NA,NA
+"BNKD","","",NA,NA,NA,NA
+"BNKU","","",NA,NA,NA,NA
+"BNO","","",NA,NA,NA,NA
+"BOAT","","",NA,NA,NA,NA
+"BOIL","","",NA,NA,NA,NA
+"BOND","","",NA,NA,NA,NA
+"BOUT","","",NA,NA,NA,NA
+"BRF","","",NA,NA,NA,NA
+"BRKY","","",NA,NA,NA,NA
+"BRZU","","",NA,NA,NA,NA
+"BSEA","","",NA,NA,NA,NA
+"BSTP","","",NA,NA,NA,NA
+"BSV","","",NA,NA,NA,NA
+"BTAL","","",NA,NA,NA,NA
+"BTCR","","",NA,NA,NA,NA
+"BTEK","","",NA,NA,NA,NA
+"BTHM","","",NA,NA,NA,NA
+"BUL","","",NA,NA,NA,NA
+"BULZ","","",NA,NA,NA,NA
+"BUZZ","","",NA,NA,NA,NA
+"BWX","","",NA,NA,NA,NA
+"BWZ","","",NA,NA,NA,NA
+"BYLD","","",NA,NA,NA,NA
+"BYRE","","",NA,NA,NA,NA
+"BYTE","","",NA,NA,NA,NA
+"BZQ","","",NA,NA,NA,NA
+"CANE","","",NA,NA,NA,NA
+"CAPD","","",NA,NA,NA,NA
+"CAPE","","",NA,"","",NA
+"CBLS","","",NA,NA,NA,NA
+"CBON","","",NA,NA,NA,NA
+"CBSE","","",NA,NA,NA,NA
+"CCOR","","",NA,NA,NA,NA
+"CCRV","","",NA,NA,NA,NA
+"CDX","","",NA,NA,NA,NA
+"CEF","Financial Services","Asset Management",NA,"Canada","ON","M5J 2J1"
+"CEFD","","",NA,NA,NA,NA
+"CEW","","",NA,NA,NA,NA
+"CGCP","","",NA,NA,NA,NA
+"CGDV","","",NA,NA,NA,NA
+"CGGO","","",NA,NA,NA,NA
+"CGGR","","",NA,NA,NA,NA
+"CGUS","","",NA,NA,NA,NA
+"CGW","","",NA,NA,NA,NA
+"CGXU","","",NA,NA,NA,NA
+"CHAD","","",NA,NA,NA,NA
+"CHAU","","",NA,NA,NA,NA
+"CHGX","","",NA,NA,NA,NA
+"CHIC","","",NA,NA,NA,NA
+"CHIE","","",NA,NA,NA,NA
+"CHIH","","",NA,NA,NA,NA
+"CHII","","",NA,NA,NA,NA
+"CHIK","","",NA,NA,NA,NA
+"CHIM","","",NA,NA,NA,NA
+"CHIQ","","",NA,NA,NA,NA
+"CHIR","","",NA,NA,NA,NA
+"CHIS","","",NA,NA,NA,NA
+"CHIU","","",NA,NA,NA,NA
+"CHIX","","",NA,NA,NA,NA
+"CLDL","","",NA,NA,NA,NA
+"CLDS","","",NA,NA,NA,NA
+"CLIX","","",NA,NA,NA,NA
+"CLNR","","",NA,NA,NA,NA
+"CLOI","","",NA,"","",NA
+"CLSA","","",NA,NA,NA,NA
+"CLSC","","",NA,NA,NA,NA
+"CLSM","","",NA,NA,NA,NA
+"CLTL","","",NA,NA,NA,NA
+"CMBS","","",NA,NA,NA,NA
+"CMDY","","",NA,NA,NA,NA
+"CMF","","",NA,NA,NA,NA
+"CN","","",NA,NA,NA,NA
+"CNBS","","",NA,NA,NA,NA
+"CNRG","","",NA,NA,NA,NA
+"CNXT","","",NA,NA,NA,NA
+"COM","","",NA,NA,NA,NA
+"COMB","","",NA,NA,NA,NA
+"COPX","","",NA,NA,NA,NA
+"CORN","","",NA,NA,NA,NA
+"CORP","","",NA,NA,NA,NA
+"COW","","",NA,NA,NA,NA
+"CPER","","",NA,NA,NA,NA
+"CPI","","",NA,NA,NA,NA
+"CPII","","",NA,"","",NA
+"CQQQ","","",NA,NA,NA,NA
+"CRAK","","",NA,NA,NA,NA
+"CRBN","","",NA,NA,NA,NA
+"CRIT","","",NA,NA,NA,NA
+"CRPT","","",NA,NA,NA,NA
+"CRUZ","","",NA,NA,NA,NA
+"CRYP","","",NA,NA,NA,NA
+"CSD","","",NA,NA,NA,NA
+"CSH","","",NA,NA,NA,NA
+"CTA","","",NA,NA,NA,NA
+"CTEX","","",NA,NA,NA,NA
+"CUBS","","",NA,NA,NA,NA
+"CURE","","",NA,NA,NA,NA
+"CUT","","",NA,NA,NA,NA
+"CVY","","",NA,NA,NA,NA
+"CWB","","",NA,NA,NA,NA
+"CWEB","","",NA,NA,NA,NA
+"CWI","","",NA,NA,NA,NA
+"CWS","","",NA,NA,NA,NA
+"CYA","","",NA,NA,NA,NA
+"CYB","","",NA,NA,NA,NA
+"CZA","","",NA,NA,NA,NA
+"DAT","","",NA,NA,NA,NA
+"DBA","","",NA,NA,NA,NA
+"DBAW","","",NA,NA,NA,NA
+"DBB","","",NA,NA,NA,NA
+"DBC","","",NA,NA,NA,NA
+"DBE","","",NA,NA,NA,NA
+"DBEF","","",NA,NA,NA,NA
+"DBEH","","",NA,NA,NA,NA
+"DBEM","","",NA,NA,NA,NA
+"DBEU","","",NA,NA,NA,NA
+"DBEZ","","",NA,NA,NA,NA
+"DBGR","","",NA,NA,NA,NA
+"DBJP","","",NA,NA,NA,NA
+"DBLV","","",NA,NA,NA,NA
+"DBMF","","",NA,NA,NA,NA
+"DBND","","",NA,NA,NA,NA
+"DBO","","",NA,NA,NA,NA
+"DBP","","",NA,NA,NA,NA
+"DBS","","",NA,NA,NA,NA
+"DBV","","",NA,NA,NA,NA
+"DDM","","",NA,NA,NA,NA
+"DEED","","",NA,NA,NA,NA
+"DEEF","","",NA,NA,NA,NA
+"DEEP","","",NA,NA,NA,NA
+"DEF","","",NA,NA,NA,NA
+"DEHP","","",NA,NA,NA,NA
+"DEIF","","",NA,NA,NA,NA
+"DEM","","",NA,NA,NA,NA
+"DES","","",NA,NA,NA,NA
+"DEUS","","",NA,NA,NA,NA
+"DEW","","",NA,NA,NA,NA
+"DFAC","","",NA,NA,NA,NA
+"DFAE","","",NA,NA,NA,NA
+"DFAI","","",NA,NA,NA,NA
+"DFAR","","",NA,NA,NA,NA
+"DFAS","","",NA,NA,NA,NA
+"DFAT","","",NA,NA,NA,NA
+"DFAU","","",NA,NA,NA,NA
+"DFAX","","",NA,NA,NA,NA
+"DFCF","","",NA,NA,NA,NA
+"DFE","","",NA,NA,NA,NA
+"DFEM","","",NA,NA,NA,NA
+"DFEN","","",NA,NA,NA,NA
+"DFEV","","",NA,NA,NA,NA
+"DFIP","","",NA,NA,NA,NA
+"DFIV","","",NA,NA,NA,NA
+"DFJ","","",NA,NA,NA,NA
+"DFNM","","",NA,NA,NA,NA
+"DFSD","","",NA,NA,NA,NA
+"DFSV","","",NA,NA,NA,NA
+"DFUS","","",NA,NA,NA,NA
+"DFUV","","",NA,NA,NA,NA
+"DGIN","","",NA,NA,NA,NA
+"DGL","","",NA,NA,NA,NA
+"DGP","","",NA,NA,NA,NA
+"DGRO","","",NA,NA,NA,NA
+"DGS","","",NA,NA,NA,NA
+"DGT","","",NA,NA,NA,NA
+"DGZ","","",NA,NA,NA,NA
+"DHS","","",NA,NA,NA,NA
+"DIA","","",NA,NA,NA,NA
+"DIAL","","",NA,NA,NA,NA
+"DIG","","",NA,NA,NA,NA
+"DIM","","",NA,NA,NA,NA
+"DIV","","",NA,NA,NA,NA
+"DIVO","","",NA,NA,NA,NA
+"DIVS","","",NA,NA,NA,NA
+"DIVZ","","",NA,NA,NA,NA
+"DJCB","","",NA,NA,NA,NA
+"DJD","","",NA,NA,NA,NA
+"DJIA","","",NA,NA,NA,NA
+"DJP","","",NA,NA,NA,NA
+"DLN","","",NA,NA,NA,NA
+"DLS","","",NA,NA,NA,NA
+"DMCY","","",NA,NA,NA,NA
+"DMDV","","",NA,NA,NA,NA
+"DNL","","",NA,NA,NA,NA
+"DOG","","",NA,NA,NA,NA
+"DOL","","",NA,NA,NA,NA
+"DON","","",NA,NA,NA,NA
+"DOZR","","",NA,NA,NA,NA
+"DPST","","",NA,NA,NA,NA
+"DRIP","","",NA,NA,NA,NA
+"DRN","","",NA,NA,NA,NA
+"DRV","","",NA,NA,NA,NA
+"DSCF","","",NA,NA,NA,NA
+"DSI","","",NA,NA,NA,NA
+"DSTL","","",NA,NA,NA,NA
+"DSTX","","",NA,NA,NA,NA
+"DTD","","",NA,NA,NA,NA
+"DTEC","","",NA,NA,NA,NA
+"DTH","","",NA,NA,NA,NA
+"DTOX","","",NA,NA,NA,NA
+"DUG","","",NA,NA,NA,NA
+"DUHP","","",NA,NA,NA,NA
+"DUSL","","",NA,NA,NA,NA
+"DUST","","",NA,NA,NA,NA
+"DVYA","","",NA,NA,NA,NA
+"DVYE","","",NA,NA,NA,NA
+"DWM","","",NA,NA,NA,NA
+"DWMF","","",NA,NA,NA,NA
+"DWX","","",NA,NA,NA,NA
+"DXD","","",NA,NA,NA,NA
+"DXJ","","",NA,NA,NA,NA
+"DYLD","","",NA,NA,NA,NA
+"DYNF","","",NA,NA,NA,NA
+"DZZ","","",NA,NA,NA,NA
+"EAFD","","",NA,"","",NA
+"EAGG","","",NA,NA,NA,NA
+"EAPR","","",NA,NA,NA,NA
+"EASG","","",NA,NA,NA,NA
+"EATV","","",NA,NA,NA,NA
+"EATZ","","",NA,NA,NA,NA
+"EBLU","","",NA,NA,NA,NA
+"EBND","","",NA,NA,NA,NA
+"ECLN","","",NA,NA,NA,NA
+"ECNS","","",NA,NA,NA,NA
+"ECON","","",NA,NA,NA,NA
+"ECOZ","","",NA,NA,NA,NA
+"EDC","","",NA,NA,NA,NA
+"EDIV","","",NA,NA,NA,NA
+"EDOG","","",NA,NA,NA,NA
+"EDOW","","",NA,NA,NA,NA
+"EDV","","",NA,NA,NA,NA
+"EDZ","","",NA,NA,NA,NA
+"EEH","","",NA,NA,NA,NA
+"EELV","","",NA,NA,NA,NA
+"EEM","","",NA,NA,NA,NA
+"EEMD","","",NA,NA,NA,NA
+"EEMO","","",NA,NA,NA,NA
+"EEMS","","",NA,NA,NA,NA
+"EEMX","","",NA,NA,NA,NA
+"EERN","","",NA,NA,NA,NA
+"EES","","",NA,NA,NA,NA
+"EET","","",NA,NA,NA,NA
+"EEV","","",NA,NA,NA,NA
+"EFA","","",NA,NA,NA,NA
+"EFAX","","",NA,NA,NA,NA
+"EFIV","","",NA,NA,NA,NA
+"EFIX","","",NA,NA,NA,NA
+"EFO","","",NA,NA,NA,NA
+"EFU","","",NA,NA,NA,NA
+"EFZ","","",NA,NA,NA,NA
+"EGPT","","",NA,NA,NA,NA
+"EIDO","","",NA,NA,NA,NA
+"EINC","","",NA,NA,NA,NA
+"EIRL","","",NA,NA,NA,NA
+"EIS","","",NA,NA,NA,NA
+"EJAN","","",NA,NA,NA,NA
+"EJUL","","",NA,NA,NA,NA
+"EKAR","","",NA,NA,NA,NA
+"ELD","","",NA,NA,NA,NA
+"ELQD","","",NA,NA,NA,NA
+"EMBD","","",NA,NA,NA,NA
+"EMBH","","",NA,NA,NA,NA
+"EMCR","","",NA,NA,NA,NA
+"EMFM","","",NA,NA,NA,NA
+"EMFQ","","",NA,NA,NA,NA
+"EMGD","","",NA,NA,NA,NA
+"EMHC","","",NA,NA,NA,NA
+"EMLC","","",NA,NA,NA,NA
+"EMLP","","",NA,NA,NA,NA
+"EMMF","","",NA,NA,NA,NA
+"EMNT","","",NA,NA,NA,NA
+"EMQQ","","",NA,NA,NA,NA
+"EMSG","","",NA,NA,NA,NA
+"EMTY","","",NA,NA,NA,NA
+"ENFR","","",NA,NA,NA,NA
+"ENTR","","",NA,NA,NA,NA
+"EOCT","","",NA,NA,NA,NA
+"EPHE","","",NA,NA,NA,NA
+"EPI","","",NA,NA,NA,NA
+"EPOL","","",NA,NA,NA,NA
+"EPP","","",NA,NA,NA,NA
+"EPRE","","",NA,NA,NA,NA
+"EPS","","",NA,NA,NA,NA
+"EPU","","",NA,NA,NA,NA
+"EPV","","",NA,NA,NA,NA
+"EQAL","","",NA,NA,NA,NA
+"EQL","","",NA,NA,NA,NA
+"EQOP","","",NA,NA,NA,NA
+"EQUL","","",NA,NA,NA,NA
+"EQWL","","",NA,NA,NA,NA
+"ERM","","",NA,NA,NA,NA
+"ERSX","","",NA,NA,NA,NA
+"ERTH","","",NA,NA,NA,NA
+"ERUS","","",NA,NA,NA,NA
+"ERX","","",NA,NA,NA,NA
+"ERY","","",NA,NA,NA,NA
+"ESBA","Real Estate","REIT—Office",693,"United States","NY","10120"
+"ESGA","","",NA,NA,NA,NA
+"ESGB","","",NA,NA,NA,NA
+"ESGN","","",NA,NA,NA,NA
+"ESGS","","",NA,NA,NA,NA
+"ESGY","","",NA,NA,NA,NA
+"ESIX","","",NA,NA,NA,NA
+"ESUS","","",NA,"","",NA
+"ETHO","","",NA,NA,NA,NA
+"EUDG","","",NA,NA,NA,NA
+"EUM","","",NA,NA,NA,NA
+"EUO","","",NA,NA,NA,NA
+"EURL","","",NA,NA,NA,NA
+"EUSA","","",NA,NA,NA,NA
+"EUSB","","",NA,NA,NA,NA
+"EUSC","","",NA,NA,NA,NA
+"EVEN","","",NA,NA,NA,NA
+"EVNT","","",NA,NA,NA,NA
+"EVX","","",NA,NA,NA,NA
+"EWA","","",NA,NA,NA,NA
+"EWC","","",NA,NA,NA,NA
+"EWCO","","",NA,NA,NA,NA
+"EWD","","",NA,NA,NA,NA
+"EWG","","",NA,NA,NA,NA
+"EWH","","",NA,NA,NA,NA
+"EWI","","",NA,NA,NA,NA
+"EWJ","","",NA,NA,NA,NA
+"EWK","","",NA,NA,NA,NA
+"EWL","","",NA,NA,NA,NA
+"EWM","","",NA,NA,NA,NA
+"EWMC","","",NA,NA,NA,NA
+"EWN","","",NA,NA,NA,NA
+"EWO","","",NA,NA,NA,NA
+"EWP","","",NA,NA,NA,NA
+"EWQ","","",NA,NA,NA,NA
+"EWRE","","",NA,NA,NA,NA
+"EWS","","",NA,NA,NA,NA
+"EWSC","","",NA,NA,NA,NA
+"EWT","","",NA,NA,NA,NA
+"EWU","","",NA,NA,NA,NA
+"EWV","","",NA,NA,NA,NA
+"EWW","","",NA,NA,NA,NA
+"EWX","","",NA,NA,NA,NA
+"EWY","","",NA,NA,NA,NA
+"EWZ","","",NA,NA,NA,NA
+"EXI","","",NA,NA,NA,NA
+"EZA","","",NA,NA,NA,NA
+"EZJ","","",NA,NA,NA,NA
+"EZM","","",NA,NA,NA,NA
+"FAN","","",NA,NA,NA,NA
+"FAS","","",NA,NA,NA,NA
+"FAZ","","",NA,NA,NA,NA
+"FBGX","","",NA,NA,NA,NA
+"FBND","","",NA,NA,NA,NA
+"FBT","","",NA,NA,NA,NA
+"FCG","","",NA,NA,NA,NA
+"FCOM","","",NA,NA,NA,NA
+"FCOR","","",NA,NA,NA,NA
+"FCSH","","",NA,NA,NA,NA
+"FDD","","",NA,NA,NA,NA
+"FDHY","","",NA,NA,NA,NA
+"FDIS","","",NA,NA,NA,NA
+"FDL","","",NA,NA,NA,NA
+"FDLO","","",NA,NA,NA,NA
+"FDM","","",NA,NA,NA,NA
+"FDMO","","",NA,NA,NA,NA
+"FDN","","",NA,NA,NA,NA
+"FDRR","","",NA,NA,NA,NA
+"FDVV","","",NA,NA,NA,NA
+"FDWM","","",NA,NA,NA,NA
+"FEDL","","",NA,"","",NA
+"FEDM","","",NA,NA,NA,NA
+"FEEM","","",NA,NA,NA,NA
+"FEHY","","",NA,NA,NA,NA
+"FEIG","","",NA,NA,NA,NA
+"FENY","","",NA,NA,NA,NA
+"FEUS","","",NA,NA,NA,NA
+"FEVR","","",NA,NA,NA,NA
+"FEZ","","",NA,NA,NA,NA
+"FFIU","","",NA,NA,NA,NA
+"FFND","","",NA,NA,NA,NA
+"FFR","","",NA,NA,NA,NA
+"FFTY","","",NA,NA,NA,NA
+"FGD","","",NA,NA,NA,NA
+"FGLD","","",NA,"","",NA
+"FHLC","","",NA,NA,NA,NA
+"FHYS","","",NA,NA,NA,NA
+"FIDI","","",NA,NA,NA,NA
+"FIDU","","",NA,NA,NA,NA
+"FIEE","","",NA,NA,NA,NA
+"FIG","","",NA,NA,NA,NA
+"FIGB","","",NA,NA,NA,NA
+"FIHD","","",NA,NA,NA,NA
+"FILL","","",NA,NA,NA,NA
+"FISK","Real Estate","REIT—Office",693,"United States","NY","10120"
+"FISR","","",NA,NA,NA,NA
+"FITE","","",NA,NA,NA,NA
+"FIVA","","",NA,NA,NA,NA
+"FIVG","","",NA,NA,NA,NA
+"FIW","","",NA,NA,NA,NA
+"FLAU","","",NA,NA,NA,NA
+"FLAX","","",NA,NA,NA,NA
+"FLBR","","",NA,NA,NA,NA
+"FLCA","","",NA,NA,NA,NA
+"FLCB","","",NA,NA,NA,NA
+"FLCH","","",NA,NA,NA,NA
+"FLCO","","",NA,NA,NA,NA
+"FLDZ","","",NA,NA,NA,NA
+"FLEE","","",NA,NA,NA,NA
+"FLEH","","",NA,NA,NA,NA
+"FLFR","","",NA,NA,NA,NA
+"FLGB","","",NA,NA,NA,NA
+"FLGR","","",NA,NA,NA,NA
+"FLGV","","",NA,NA,NA,NA
+"FLHK","","",NA,NA,NA,NA
+"FLIN","","",NA,NA,NA,NA
+"FLIY","","",NA,NA,NA,NA
+"FLJH","","",NA,NA,NA,NA
+"FLJP","","",NA,NA,NA,NA
+"FLKR","","",NA,NA,NA,NA
+"FLLA","","",NA,NA,NA,NA
+"FLLV","","",NA,NA,NA,NA
+"FLM","","",NA,NA,NA,NA
+"FLMB","","",NA,NA,NA,NA
+"FLMI","","",NA,NA,NA,NA
+"FLMX","","",NA,NA,NA,NA
+"FLQD","","",NA,NA,NA,NA
+"FLQE","","",NA,NA,NA,NA
+"FLQG","","",NA,NA,NA,NA
+"FLQH","","",NA,NA,NA,NA
+"FLRG","","",NA,NA,NA,NA
+"FLRN","","",NA,NA,NA,NA
+"FLRT","","",NA,NA,NA,NA
+"FLRU","","",NA,NA,NA,NA
+"FLSA","","",NA,NA,NA,NA
+"FLSP","","",NA,NA,NA,NA
+"FLSW","","",NA,NA,NA,NA
+"FLTB","","",NA,NA,NA,NA
+"FLTR","","",NA,NA,NA,NA
+"FLTW","","",NA,NA,NA,NA
+"FLUD","","",NA,NA,NA,NA
+"FLYD","","",NA,"","",NA
+"FLYU","","",NA,"","",NA
+"FLZA","","",NA,NA,NA,NA
+"FM","","",NA,NA,NA,NA
+"FMAT","","",NA,NA,NA,NA
+"FMCX","","",NA,NA,NA,NA
+"FMF","","",NA,NA,NA,NA
+"FMNY","","",NA,NA,NA,NA
+"FMQQ","","",NA,NA,NA,NA
+"FNCL","","",NA,NA,NA,NA
+"FNDA","","",NA,NA,NA,NA
+"FNDB","","",NA,NA,NA,NA
+"FNDC","","",NA,NA,NA,NA
+"FNDE","","",NA,NA,NA,NA
+"FNDF","","",NA,NA,NA,NA
+"FNDX","","",NA,NA,NA,NA
+"FNGD","","",NA,NA,NA,NA
+"FNGG","","",NA,NA,NA,NA
+"FNGO","","",NA,NA,NA,NA
+"FNGS","","",NA,NA,NA,NA
+"FNGU","","",NA,NA,NA,NA
+"FNI","","",NA,NA,NA,NA
+"FNTC","","",NA,NA,NA,NA
+"FORH","","",NA,NA,NA,NA
+"FOVL","","",NA,NA,NA,NA
+"FPE","","",NA,NA,NA,NA
+"FPEI","","",NA,NA,NA,NA
+"FPX","","",NA,NA,NA,NA
+"FQAL","","",NA,NA,NA,NA
+"FREL","","",NA,NA,NA,NA
+"FRI","","",NA,NA,NA,NA
+"FRTY","","",NA,NA,NA,NA
+"FSBD","","",NA,NA,NA,NA
+"FSEC","","",NA,NA,NA,NA
+"FSIG","","",NA,NA,NA,NA
+"FSLD","","",NA,NA,NA,NA
+"FSMB","","",NA,NA,NA,NA
+"FSMD","","",NA,NA,NA,NA
+"FSST","","",NA,NA,NA,NA
+"FSTA","","",NA,NA,NA,NA
+"FSYD","","",NA,NA,NA,NA
+"FTEC","","",NA,NA,NA,NA
+"FTLS","","",NA,NA,NA,NA
+"FTSD","","",NA,NA,NA,NA
+"FUE","","",NA,NA,NA,NA
+"FUMB","","",NA,NA,NA,NA
+"FUTY","","",NA,NA,NA,NA
+"FVAL","","",NA,NA,NA,NA
+"FVD","","",NA,NA,NA,NA
+"FXA","","",NA,NA,NA,NA
+"FXB","","",NA,NA,NA,NA
+"FXC","","",NA,NA,NA,NA
+"FXD","","",NA,NA,NA,NA
+"FXE","","",NA,NA,NA,NA
+"FXF","","",NA,NA,NA,NA
+"FXG","","",NA,NA,NA,NA
+"FXH","","",NA,NA,NA,NA
+"FXI","","",NA,NA,NA,NA
+"FXL","","",NA,NA,NA,NA
+"FXN","","",NA,NA,NA,NA
+"FXO","","",NA,NA,NA,NA
+"FXP","","",NA,NA,NA,NA
+"FXR","","",NA,NA,NA,NA
+"FXU","","",NA,NA,NA,NA
+"FXY","","",NA,NA,NA,NA
+"FXZ","","",NA,NA,NA,NA
+"GABF","","",NA,"","",NA
+"GAL","","",NA,NA,NA,NA
+"GAMR","","",NA,NA,NA,NA
+"GAST","","",NA,"","",NA
+"GAZ","","",NA,NA,NA,NA
+"GBDV","","",NA,NA,NA,NA
+"GBF","","",NA,NA,NA,NA
+"GBGR","","",NA,NA,NA,NA
+"GBIL","","",NA,NA,NA,NA
+"GBLD","","",NA,NA,NA,NA
+"GBLO","","",NA,NA,NA,NA
+"GBUG","","",NA,NA,NA,NA
+"GBUY","","",NA,NA,NA,NA
+"GCC","","",NA,NA,NA,NA
+"GCIG","","",NA,NA,NA,NA
+"GCOR","","",NA,NA,NA,NA
+"GDIV","","",NA,NA,NA,NA
+"GDMA","","",NA,NA,NA,NA
+"GDOC","","",NA,NA,NA,NA
+"GDVD","","",NA,NA,NA,NA
+"GDX","","",NA,NA,NA,NA
+"GDXD","","",NA,NA,NA,NA
+"GDXJ","","",NA,NA,NA,NA
+"GDXU","","",NA,NA,NA,NA
+"GEM","","",NA,NA,NA,NA
+"GERM","","",NA,NA,NA,NA
+"GFOF","","",NA,NA,NA,NA
+"GGRW","","",NA,NA,NA,NA
+"GHYB","","",NA,NA,NA,NA
+"GIGB","","",NA,NA,NA,NA
+"GII","","",NA,NA,NA,NA
+"GINN","","",NA,NA,NA,NA
+"GK","","",NA,NA,NA,NA
+"GLCN","","",NA,NA,NA,NA
+"GLD","","",NA,NA,NA,NA

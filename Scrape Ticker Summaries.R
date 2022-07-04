@@ -15,9 +15,17 @@ install.packages(setdiff(packages, rownames(installed.packages())))
 # load packages
 lapply(packages, require, character.only = TRUE)
 
+# yfinance
+remotes::install_github("ljupch0/yfinance")
+library(yfinance)
+
 # ======================================================================
 # Scrape industry data from Yahoo Finance
 # ======================================================================
+
+# list of tickers
+tickers <- stockSymbols()
+validTickers <- tickers[["Symbol"]]
 
 # Scrape sector and industry from yahoo finance
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -82,5 +90,53 @@ data.frame(ticker = validTickers[1:10]) %>%
          industry = scrape_company_type(ticker)[["industry"]]) %>%
   write.csv(., "Industry_and_Sector.csv", row.names = FALSE)
 
+# Stop clock
+proc.time() - ptm
+
+# ======================================================================
+# Compare to yfinance package
+# ======================================================================
+
+zzz <- get_summaries(c("GILD"))
+names(zzz)
+
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#' Wrapper for yfinance::get_summaries()
+#' 
+#' Accommodates 0x0 tibble results when pipping via dplyr
+#' 
+#' @examples 
+#' get_summaries2("GILD")
+#' get_summaries2("ARDA-WT")
+get_summaries2 <- function(ticker){
+  rv <- suppressWarnings(try(get_summaries(ticker)))
+  
+  if(all(dim(rv) == c(0,0))){
+    data.frame(sector = "", industry = "", fte = NA, 
+               country = "", state = "", zip = NA)
+  } else {
+    # merge multiple sectors and industries into a single string
+    data.frame(sector = paste(rv$sector, collapse = ","),
+               industry = paste(rv$industry, collapse = ","),
+               fte = ifelse(is.null(rv$fullTimeEmployees), NA, 
+                            rv$fullTimeEmployees),
+               country = ifelse(is.null(rv$country), NA, rv$country),
+               state = ifelse(is.null(rv$state), NA, rv$state),
+               zip = ifelse(is.null(rv$zip), NA, rv$zip))
+  }
+}
+
+# Test
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# Start clock
+ptm <- proc.time()
+
+# test 1: takes ~70s to run first 500 rows. (~28 mins to run all 12210 rows)
+# test 2: takes ~136 to run first 1000 rows.
+zzz <- data.frame(ticker = validTickers[1:1000]) %>%
+  rowwise() %>%
+  mutate(get_summaries2(ticker)) %>%
+  write.csv(., "security_summaries.csv", row.names = FALSE)
+  
 # Stop clock
 proc.time() - ptm
