@@ -3,12 +3,10 @@
 # ======================================================================
 
 packages <- c("tidyverse",    # ggplot, dplyr, etc. 
-              "TSA",          # time series stuff
               "lubridate",    # date time 
               "roxygen2",     # function documentation
               "data.table",   # read web hosted file
               "tidyquant",    # pull stock data
-              "rvest"         # web scrapping
               )    
 
 # check if packages are installed, if not, install
@@ -17,8 +15,48 @@ install.packages(setdiff(packages, rownames(installed.packages())))
 # load packages
 lapply(packages, require, character.only = TRUE)
 
+# yfinance
+remotes::install_github("ljupch0/yfinance")
+library(yfinance)
+
 # ======================================================================
-# Load and Clean House Stock Data 
+# dplyr wrapper for yfinance
+# ======================================================================
+
+#zzz <- get_summaries(c("GILD"))
+#names(zzz)
+
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#' Wrapper for yfinance::get_summaries()
+#' 
+#' Accommodates 0x0 tibble results when pipping via dplyr
+#' 
+#' @examples 
+#' get_summaries2("GILD")
+#' get_summaries2("ARDA-WT")
+get_summaries2 <- function(ticker){
+  rv <- suppressWarnings(try(get_summaries(ticker)))
+  
+  if(all(dim(rv) == c(0,0))){
+    data.frame(sector = "", industry = "", fte = NA, 
+               country = "", state = "", zip = NA)
+  } else {
+    # merge multiple sectors and industries into a single string
+    data.frame(sector = paste(rv$sector, collapse = ","),
+               industry = paste(rv$industry, collapse = ","),
+               fte = ifelse(is.null(rv$fullTimeEmployees), NA, 
+                            rv$fullTimeEmployees),
+               country = ifelse(is.null(rv$country), NA, rv$country),
+               state = ifelse(is.null(rv$state), NA, rv$state),
+               zip = ifelse(is.null(rv$zip), NA, rv$zip))
+  }
+}
+
+# Test ..........
+get_summaries2("GILD")
+
+# ======================================================================
+# Load, clean, and process house stock data 
 # ======================================================================
 
 # data from housestockwatcher.com
@@ -70,16 +108,14 @@ nrow(df0) - nrow(df)
 
 #' Get the price of a stock 
 #' 
-#' This returns the opening price (other options include "high", "low", and 
-#' "close") of a stock ticker at a given date. This function assists with
-#' assigning stock prices to congress-reported data where only transaction
+#' This returns the of a stock ticker at a given date. This function assists 
+#' with assigning stock prices to congress-reported data where only transaction
 #' dates are given. 
 #' 
 #' @param ticker ticker abbreviation of the stock in question.
 #' @param date date of transaction, in "YYYY-MM-DD" format.
-#' @param interval the price point for the day used to calculate the stock price.
 #' 
-#' @return the opening/high/low/closing price of a stock at a given day. Returns
+#' @return the price of a stock at a given day. Returns
 #' NA if an error is return from tidyquant::tq_get. 
 #' 
 #' @examples 
@@ -100,12 +136,13 @@ return_price <- function(ticker, date, interval = "open"){
   rv <- suppressWarnings(try(tq_get(ticker, 
                                     from = date, 
                                     to = as.Date(date)+1, 
-                                    get = "stock.prices")[[interval]],
+                                    get = "stock.prices"),
                              silent = TRUE))
-  if("try-error" %in% class(rv)) {
-    return(NA)
+  if("try-error" %in% class(rv) | is.null(dim(rv))) {
+    data.frame(pps_open = NA, pps_high = NA, pps_low = NA, pps_close = NA)
   } else {
-    rv
+    data.frame(pps_open = rv$open, pps_high = rv$high, 
+               pps_low = rv$low, pps_close = rv$close)
   }
 }
 
@@ -115,18 +152,22 @@ return_price("AAPL", "2020-01-04")
 # double: 
 return_price("AAPL", "2020-01-06")
 
-# Include price of share at transaction date:
+# Include price of share at transaction date and security summary
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 # Start clock
 ptm <- proc.time()
 
-# takes ~17s to run 100 rows. (~7 mins to run 2800 rows)
-df1 <- df[1:100] %>%
-  # Compute price per share (pps) at open. 
+# Test 1: ~30s/100rows. (~14mins/2800 rows)
+# Test 2: 1891s/2455rows.
+df1 <- df %>%
   rowwise() %>%
-  mutate(pps_open = return_price(ticker, transaction_date))
+  # Compute price per share (pps)
+  mutate(return_price(ticker, transaction_date)) %>%
+  # add summary info
+  mutate(get_summaries2(ticker)) %>%
+  write.csv(., paste0("Processed Data/",
+                      Sys.Date(), "_congress_security_histories.csv"), 
+            row.names = FALSE)
 
 # Stop clock
 proc.time() - ptm
-
-
