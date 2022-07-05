@@ -27,7 +27,8 @@ library(yfinance)
 #names(zzz)
 
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-#' Wrapper for yfinance::get_summaries()
+#' Wrapper for yfinance::get_summaries(). Gets sector, industry, #fte, country,
+#' state, and zip code for a ticker. 
 #' 
 #' Accommodates 0x0 tibble results when pipping via dplyr
 #' 
@@ -76,12 +77,12 @@ validTickers <- tickers[["Symbol"]]
 df <- df0 %>%
   # remove entries w/ unrecognized tickers
   # remove entries without "amount" formatted as "$XXXX - $YYYY"
-  # remove "exchange" and "sale_partial" transactions
+  # remove "exchange" transactions
   # remove transactions prior to 2021
   # remove transactions not owned by "self" or "joint"
   filter(ticker %in% validTickers, 
          str_detect(amount, "\\$[0-9,]+ - \\$[0-9,]+"),
-         type %in% c("sale_full", "purchase"),
+         type %in% c("sale_full", "purchase", "sale_partial"),
          year(transaction_date) >= 2021,
          owner %in% c("joint", "self")) %>%
   # change year type to integer
@@ -122,7 +123,7 @@ nrow(df0) - nrow(df)
 #' return_price("AAPL", "2020-01-04")
 #' return_price("NONEXISTENTTICKER", "2020-01-06")
 #' return_price("AAPL", "2020-01-06")
-return_price <- function(ticker, date, interval = "open"){
+return_price <- function(ticker, date){
   
   # Check inputs
   if(!is.character("ticker")) 
@@ -130,8 +131,6 @@ return_price <- function(ticker, date, interval = "open"){
   if(str_detect(date, "[1-2][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]$", 
                 negate = TRUE))
     stop("Error: date is not in the proper format")
-  if(! interval %in% c("open", "high", "low", "close"))
-    stop("Error: interval selection is not valid")
   
   rv <- suppressWarnings(try(tq_get(ticker, 
                                     from = date, 
@@ -158,7 +157,7 @@ return_price("AAPL", "2020-01-06")
 ptm <- proc.time()
 
 # Test 1: ~30s/100rows. (~14mins/2800 rows)
-# Test 2: 1891s/2455rows.
+# Test 2: 1891s/2455rows (~30 mins).
 df1 <- df %>%
   rowwise() %>%
   # Compute price per share (pps)
