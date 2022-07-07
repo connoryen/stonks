@@ -6,7 +6,7 @@ packages <- c("tidyverse",    # ggplot, dplyr, etc.
               "lubridate",    # date time 
               "roxygen2",     # function documentation
               "data.table",   # read web hosted file
-              "tidyquant",    # pull stock data
+              "tidyquant"    # pull stock data
               )    
 
 # check if packages are installed, if not, install
@@ -23,8 +23,9 @@ library(yfinance)
 # dplyr wrapper for yfinance
 # ======================================================================
 
-#zzz <- get_summaries(c("GILD"))
-#names(zzz)
+zzz <- get_summaries(c("GILD"))
+names(zzz)
+zzz$industry; zzz$sector
 
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #' Wrapper for yfinance::get_summaries(). Gets sector, industry, #fte, country,
@@ -57,55 +58,8 @@ get_summaries2 <- function(ticker){
 get_summaries2("GILD")
 
 # ======================================================================
-# Load, clean, and process house stock data 
+# Helper function for price of stocks
 # ======================================================================
-
-# data from housestockwatcher.com
-df0 <- fread('https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.csv')
-
-# EDA for df0
-# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-table(year(df0$transaction_date))
-table(df0$owner)
-
-# clean data frame:
-# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-# list of tickers
-tickers <- stockSymbols()
-validTickers <- tickers[["Symbol"]]
-
-df <- df0 %>%
-  # remove entries w/ unrecognized tickers
-  # remove entries without "amount" formatted as "$XXXX - $YYYY"
-  # remove "exchange" transactions
-  # remove transactions prior to 2021
-  # remove transactions not owned by "self" or "joint"
-  filter(ticker %in% validTickers, 
-         str_detect(amount, "\\$[0-9,]+ - \\$[0-9,]+"),
-         type %in% c("sale_full", "purchase", "sale_partial"),
-         year(transaction_date) >= 2021,
-         owner %in% c("joint", "self")) %>%
-  # change year type to integer
-  mutate(disclosure_year = as.integer(disclosure_year)) %>%
-  # get lower bound of "amount" -- first dollar amount starting with "$"
-  # get upper bound of "amount" -- dollar amount at end of string, 
-  #   starting with "$".
-  mutate(lower_amount = parse_number(str_match(amount, "\\$[0-9,]+")),
-         upper_amount = parse_number(str_match(amount, "\\$[0-9,]+$")))
-
-nrow(df)
-# rows deleted:
-nrow(df0) - nrow(df)
-
-# test stringr for amounts: 
-#zzz <- c("$1,001 - $15,000", "$1,000,001 - $5,000,000", 
-#          "$500,001 - $1,000,000", "$1000 - ")
-#parse_number(str_match(zzz, "\\$[0-9,]+"))
-#parse_number(str_match(zzz, "\\$[0-9,]+$"))
-#str_detect(zzz, "\\$[0-9,]+ - \\$[0-9,]+")
-
-# Helper function for price of stocks:
-# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 #' Get the price of a stock 
 #' 
@@ -122,7 +76,7 @@ nrow(df0) - nrow(df)
 #' @examples 
 #' return_price("AAPL", "2020-01-04")
 #' return_price("NONEXISTENTTICKER", "2020-01-06")
-#' return_price("AAPL", "2020-01-06")
+#' return_price("AAPL", "2020-01-31")
 return_price <- function(ticker, date){
   
   # Check inputs
@@ -149,24 +103,117 @@ return_price <- function(ticker, date){
 # NA:
 return_price("AAPL", "2020-01-04")
 # double: 
-return_price("AAPL", "2020-01-06")
+return_price("AAPL", "2020-01-31")
+
+# ======================================================================
+# Load, clean, and process house stock data 
+# ======================================================================
+
+#' Get a data frame of security transactions made by house members. 
+#' 
+#' For each transaction, includes the pps (at open, high, low, and close). Also
+#' includes summary information from yahoo finance for the purchased security 
+#' (sector, industry, number of full time employees (fte), country, state, and 
+#' zip code). 
+#' 
+#' Time tests: (1) 30s/100 rows, (2) 1891s/2455 rows, (3) 233s/648 rows
+#' 
+#' @param from transaction starting date (inclusive). Class: Date. 
+#' @param to transaction ending date (inclusive). Class: Date. 
+#' @param type either "individual" or "full". Specifies type of transactions
+#' to pull. For "individual" pulls types "self" and "joint". For full, pulls 
+#' all types. Class: character. 
+#' 
+get_house_transactions <- function(from = as.Date(paste0(year(Sys.Date()), 
+                                                         "-01-01")),
+                                   to = Sys.Date(),
+                                   type = "individual") {
+  # Check inputs
+  if(!is.Date(from) & is.Date(to)) 
+    stop("Error: from and to values are not dates. Try as.Date().")
+  if(!type %in% c("individual", "full")) 
+    stop("Error: type must either be individual or full")
+  
+  # data from housestockwatcher.com
+  df0 <- fread('https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.csv')
+  
+  # list of tickers
+  validTickers <- stockSymbols()
+  validTickers <- validTickers[["Symbol"]]
+  
+  # clean data frame:
+  # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  
+  # test stringr for amounts: 
+  #zzz <- c("$1,001 - $15,000", "$1,000,001 - $5,000,000", 
+  #          "$500,001 - $1,000,000", "$1000 - ")
+  #parse_number(str_match(zzz, "\\$[0-9,]+"))
+  #parse_number(str_match(zzz, "\\$[0-9,]+$"))
+  #str_detect(zzz, "\\$[0-9,]+ - \\$[0-9,]+")
+  
+  if(type == "full") {
+    df <- df0 %>%
+      # remove entries w/ unrecognized tickers
+      # remove entries without "amount" formatted as "$XXXX - $YYYY"
+      # remove "exchange" transactions
+      # remove transactions outside of date range
+      filter(ticker %in% validTickers, 
+             str_detect(amount, "\\$[0-9,]+ - \\$[0-9,]+"),
+             as.Date(transaction_date) >= from, 
+             as.Date(transaction_date) <= to, 
+             type %in% c("sale_full", "purchase", "sale_partial")) %>%
+      # change year type to integer
+      mutate(disclosure_year = as.integer(disclosure_year)) %>%
+      # get lower bound of "amount" -- first dollar amount starting with "$"
+      # get upper bound of "amount" -- dollar amount at end of string, 
+      #   starting with "$".
+      mutate(lower_amount = parse_number(str_match(amount, "\\$[0-9,]+")),
+             upper_amount = parse_number(str_match(amount, "\\$[0-9,]+$")))
+  } else {
+    df <- df0 %>%
+      # remove entries w/ unrecognized tickers
+      # remove entries without "amount" formatted as "$XXXX - $YYYY"
+      # remove "exchange" transactions
+      # remove transactions outside of date range
+      # remove transactions not owned by "self" or "joint"
+      filter(ticker %in% validTickers, 
+             str_detect(amount, "\\$[0-9,]+ - \\$[0-9,]+"),
+             as.Date(transaction_date) >= from, 
+             as.Date(transaction_date) <= to, 
+             type %in% c("sale_full", "purchase", "sale_partial"),
+             owner %in% c("joint", "self")) %>%
+      # change year type to integer
+      mutate(disclosure_year = as.integer(disclosure_year)) %>%
+      # get lower bound of "amount" -- first dollar amount starting with "$"
+      # get upper bound of "amount" -- dollar amount at end of string, 
+      #   starting with "$".
+      mutate(lower_amount = parse_number(str_match(amount, "\\$[0-9,]+")),
+             upper_amount = parse_number(str_match(amount, "\\$[0-9,]+$")))
+  }
+  
+  # add pps and security summaries
+  # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  
+  rv <- df %>%
+    rowwise() %>%
+    # Compute price per share (pps)
+    mutate(return_price(ticker, transaction_date)) %>%
+    # add summary info
+    mutate(get_summaries2(ticker)) 
+  
+  return(rv)
+}
+
+# ======================================================================
+# run function
+# ======================================================================
 
 # Include price of share at transaction date and security summary
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 # Start clock
 ptm <- proc.time()
 
-# Test 1: ~30s/100rows. (~14mins/2800 rows)
-# Test 2: 1891s/2455rows (~30 mins).
-df1 <- df %>%
-  rowwise() %>%
-  # Compute price per share (pps)
-  mutate(return_price(ticker, transaction_date)) %>%
-  # add summary info
-  mutate(get_summaries2(ticker)) %>%
-  write.csv(., paste0("Processed Data/",
-                      Sys.Date(), "_congress_security_histories.csv"), 
-            row.names = FALSE)
+df <- get_house_transactions()
 
 # Stop clock
 proc.time() - ptm
