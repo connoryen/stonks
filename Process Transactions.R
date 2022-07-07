@@ -23,10 +23,6 @@ library(yfinance)
 # dplyr wrapper for yfinance
 # ======================================================================
 
-zzz <- get_summaries(c("GILD"))
-names(zzz)
-zzz$industry; zzz$sector
-
 # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #' Wrapper for yfinance::get_summaries(). Gets sector, industry, #fte, country,
 #' state, and zip code for a ticker. 
@@ -37,14 +33,21 @@ zzz$industry; zzz$sector
 #' get_summaries2("GILD")
 #' get_summaries2("ARDA-WT")
 get_summaries2 <- function(ticker){
+  # Check inputs
+  if(class(ticker) != "character") 
+    stop("Error: ticker inputs are not all characters")
+  if(length(ticker) != 1) 
+    stop("Error: number of tickers is invalid. Only 1 ticker is allowed")
+  
   rv <- suppressWarnings(try(get_summaries(ticker)))
   
   if(all(dim(rv) == c(0,0))){
-    data.frame(sector = "", industry = "", fte = NA, 
-               country = "", state = "", zip = NA)
+    data.frame(ticker = ticker, sector = NA, industry = NA, fte = NA, 
+               country = NA, state = NA, zip = NA)
   } else {
-    # merge multiple sectors and industries into a single string
-    data.frame(sector = paste(rv$sector, collapse = ","),
+    data.frame(ticker = rv$ticker,
+               # merge multiple sectors and industries into a single string
+               sector = paste(rv$sector, collapse = ","),
                industry = paste(rv$industry, collapse = ","),
                fte = ifelse(is.null(rv$fullTimeEmployees), NA, 
                             rv$fullTimeEmployees),
@@ -55,7 +58,8 @@ get_summaries2 <- function(ticker){
 }
 
 # Test ..........
-get_summaries2("GILD")
+#df0 <- fread('https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.csv')
+#df0[1:100] %>% rowwise() %>% mutate(get_summaries2(ticker)) %>% view()
 
 # ======================================================================
 # Helper function for price of stocks
@@ -77,11 +81,13 @@ get_summaries2("GILD")
 #' return_price("AAPL", "2020-01-04")
 #' return_price("NONEXISTENTTICKER", "2020-01-06")
 #' return_price("AAPL", "2020-01-31")
+#' return_price(c("AAPL", "MSFT"), "2020-01-31")
+#' 
 return_price <- function(ticker, date){
   
   # Check inputs
-  if(!is.character("ticker")) 
-    stop("Error: ticker input is not a string")
+  if(class(ticker) != "character") 
+    stop("Error: ticker inputs are not all characters")
   if(str_detect(date, "[1-2][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]$", 
                 negate = TRUE))
     stop("Error: date is not in the proper format")
@@ -92,18 +98,13 @@ return_price <- function(ticker, date){
                                     get = "stock.prices"),
                              silent = TRUE))
   if("try-error" %in% class(rv) | is.null(dim(rv))) {
-    data.frame(pps_open = NA, pps_high = NA, pps_low = NA, pps_close = NA)
+    data.frame(symbol = NA, pps_open = NA, pps_high = NA, pps_low = NA, 
+               pps_close = NA)
   } else {
-    data.frame(pps_open = rv$open, pps_high = rv$high, 
+    data.frame(symbol = rv$symbol, pps_open = rv$open, pps_high = rv$high, 
                pps_low = rv$low, pps_close = rv$close)
   }
 }
-
-# Test ..........
-# NA:
-return_price("AAPL", "2020-01-04")
-# double: 
-return_price("AAPL", "2020-01-31")
 
 # ======================================================================
 # Load, clean, and process house stock data 
@@ -194,14 +195,13 @@ get_house_transactions <- function(from = as.Date(paste0(year(Sys.Date()),
   # add pps and security summaries
   # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   
-  rv <- df %>%
+  # operations have to be rowwise for now. 
+  df %>%
     rowwise() %>%
     # Compute price per share (pps)
-    mutate(return_price(ticker, transaction_date)) %>%
-    # add summary info
-    mutate(get_summaries2(ticker)) 
+    mutate(return_price(ticker, transaction_date),
+           get_summaries2(ticker)) 
   
-  return(rv)
 }
 
 # ======================================================================
