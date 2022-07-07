@@ -117,23 +117,29 @@ return_price <- function(ticker, date){
 #' (sector, industry, number of full time employees (fte), country, state, and 
 #' zip code). 
 #' 
-#' Time tests: (1) 30s/100 rows, (2) 1891s/2455 rows, (3) 233s/648 rows
+#' Time tests: (1) 30s/100 rows, (2) 1891s/2455 rows, (3) 233s/648 rows, 
+#' (4) 378s/648 rows
 #' 
 #' @param from transaction starting date (inclusive). Class: Date. 
 #' @param to transaction ending date (inclusive). Class: Date. 
 #' @param type either "individual" or "full". Specifies type of transactions
 #' to pull. For "individual" pulls types "self" and "joint". For full, pulls 
 #' all types. Class: character. 
+#' @param write write data frame to a csv file.
+#' @param path path to save csv.
 #' 
 get_house_transactions <- function(from = as.Date(paste0(year(Sys.Date()), 
                                                          "-01-01")),
                                    to = Sys.Date(),
-                                   type = "individual") {
+                                   type = "individual",
+                                   write = TRUE, 
+                                   path = "Processed Data/") {
   # Check inputs
   if(!is.Date(from) & is.Date(to)) 
     stop("Error: from and to values are not dates. Try as.Date().")
   if(!type %in% c("individual", "full")) 
     stop("Error: type must either be individual or full")
+  if(class(write) != "logical") stop("Error: write must be of class logical")
   
   # data from housestockwatcher.com
   df0 <- fread('https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.csv')
@@ -196,11 +202,20 @@ get_house_transactions <- function(from = as.Date(paste0(year(Sys.Date()),
   # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   
   # operations have to be rowwise for now. 
-  df %>%
+  rv <- df %>%
     rowwise() %>%
     # Compute price per share (pps)
     mutate(return_price(ticker, transaction_date),
            get_summaries2(ticker)) 
+  
+  if(write){
+    filename <- paste0("transactions_", type, "_from_", as.character(from), 
+                       "_to_", as.character(to), ".csv")
+    write.csv(rv, paste0(path, filename))
+    rv
+  } else{
+    rv
+  }
   
 }
 
@@ -208,8 +223,6 @@ get_house_transactions <- function(from = as.Date(paste0(year(Sys.Date()),
 # run function
 # ======================================================================
 
-# Include price of share at transaction date and security summary
-# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 # Start clock
 ptm <- proc.time()
 
@@ -217,3 +230,4 @@ df <- get_house_transactions()
 
 # Stop clock
 proc.time() - ptm
+
