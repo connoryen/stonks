@@ -49,19 +49,56 @@ df %>%
 # Oil & Gas E&P = upstream segment of the oil and gas industry.
 # Includes: companies involved in drilling/extracting oil and search and exploration for oil.
 
-Gasdf <- df[grep("Gas", df$industry),]
-Gasdf %>%
-  filter(year(transaction_date) >= 2022) %>%
-  group_by(industry) %>%
+# broad industry summary
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+df %>%
+  filter(grepl("Gas", industry),
+         year(transaction_date) >= 2022) %>%
   summarise(n_purchases = sum(type == "purchase"),
             n_sales = sum(type == "sale_full"),
             net_transactions = n_purchases - n_sales,
             unique_buyers = length(unique(representative[type == 
                                                            "purchase"]))) %>%
-  arrange(-net_transactions) %>%
   view()
 
-Gasdf %>%
-  filter(representative == "Hon. Virginia Foxx") %>%
+# reps who make oil & gas related transactions:
+df %>%
+  filter(grepl("Gas", industry),
+         year(transaction_date) >= 2022) %>%
+  select(industry) %>%
+  unlist() %>%
+  unique()
+
+# reps who make oil & gas related transactions:
+df %>%
+  filter(grepl("Gas", industry),
+         year(transaction_date) >= 2022) %>%
+  select(representative) %>%
+  unlist() %>%
+  unique()
+  
+
+# summary by ticker for oil and gas related industries
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+gas_df <- df %>%
+  filter(grepl("Gas", industry),
+         year(transaction_date) >= 2022) %>%
+  group_by(ticker) %>%
+  summarise(n_purchases = sum(type == "purchase"),
+            n_sales = sum(type == "sale_full"),
+            net_transactions = n_purchases - n_sales,
+            unique_buyers = length(unique(representative[type == 
+                                                           "purchase"]))) %>%
+  arrange(-net_transactions)
+
+view(gas_df)
+
+# Foxx's oil & gas related transactions
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+df %>%
+  filter(grepl("Gas", industry),
+         year(transaction_date) >= 2022,
+         representative == "Hon. Virginia Foxx") %>%
   arrange(type, lower_amount) %>%
   view()
