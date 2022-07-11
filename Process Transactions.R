@@ -23,7 +23,6 @@ library(yfinance)
 # dplyr wrapper for yfinance
 # ======================================================================
 
-# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #' Wrapper for yfinance::get_summaries(). Gets sector, industry, #fte, country,
 #' state, and zip code for a ticker. 
 #' 
@@ -230,4 +229,16 @@ df <- get_house_transactions()
 
 # Stop clock
 proc.time() - ptm
+
+# Full data
+# ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+# Start clock
+ptm <- proc.time()
+
+df <- get_house_transactions(type = "full", from = as.Date("2018-01-01"))
+
+# Stop clock
+proc.time() - ptm
+
 
